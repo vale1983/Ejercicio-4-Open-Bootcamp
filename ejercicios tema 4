@@ -1,0 +1,106 @@
+MI ENTREGA
+
+EJERCICIOS TEMA 4
+
+ Enunciado del ejercicio:
+
+En este ejercicio practicarás las estructuras de control, para ello deberás crear:
+
+1- Usando un if, crear una condición que compare si la variable numeroIf es positivo, negativo, o 0.
+Pista: Los números inferiores a 0 son negativos y los superiores, positivos.
+2- Crea un bucle While, este bucle tendrá que tener como condición que la variable numeroWhile sea inferior a 3, el bloque de código que tendrá el bucle deberá:
+
+Incrementar el valor de la variable en uno cada vez que se ejecute.
+
+Mostrarlo por pantalla cada vez que se ejecute.
+
+3-Para el bucle Do While, deberás crear la misma estructura que en el While, pero solo se debe ejecutar una vez.
+
+4-  Para el bucle For, crea una variable numeroFor, esta variable tendrá como valor 0 y su condición será que la variable sea igual o menor que 3, se irá incrementando en 1 su valor cada vez que se ejecute y deberá mostrarse por pantalla.
+
+
+5- Por último, para el Switch, deberás crear la variable estacion, y distintos case para las cuatro estaciones del año. Dependiendo del valor de la variable estacion se deberá mandar un mensaje por consola informando de la estación en la que está. También habrá que poner un default para cuando el valor de la variable no sea una estación.
+
+
+1-
+ public static void main(String[] args) {
+ System.out.println("EJERCICIO 1 - IF"); 
+        if (numeroIf > 0) {
+            System.out.println("El Valor es POSITIVO");
+        } else if (numeroIf < 0){
+            System.out.println("El Valor es NEGATIVO");
+        } else{
+            System.out.println("El Valor es 0");
+        }
+
+2-
+ public static void main(String[] args) {
+ System.out.println("EJERCICIO 2 - WHILE");
+        
+            while (numeroWhile < 3) {
+
+                numeroWhile = numeroWhile + 1;
+
+                System.out.println("La variable While ahora es: " + numeroWhile);
+
+      
+        }
+}
+
+
+3- 
+
+public static void main(String[] args) {
+  System.out.println("EJERCICIO 3 - DO WHILE");
+        do{
+            numeroDoWhile = numeroDoWhile + 1;
+            System.out.println("La Variable DoWhile ahora es: " + numeroDoWhile);
+        }while(numeroDoWhile < 3);
+}
+
+
+4-
+
+ public static void main(String[] args) {
+ System.out.println("EJERCICIO 4 - FOR");
+
+
+            for (;numeroFor <= 3; numeroFor++) {
+                System.out.println("La variable For es: " + numeroFor);
+            }
+
+        } else{
+            System.out.println("Ha ingresado un numero mayor a 3");
+        }
+}
+5-
+ public static void main(String[] args) {
+ switch(estacion) {
+
+            case "VERANO":
+             
+                System.out.println("Es VERANO");
+            break;
+
+            case "INVIERNO":
+                
+                System.out.println("Es INVIERNO");
+            break;
+
+            case "PRIMAVERA":
+              
+                System.out.println("Es PRIMAVERA");
+            break;
+
+            case "OTOÑO":
+              
+                System.out.println("Es OTOÑO");
+                break;
+
+            default:
+               
+                System.out.println("NO HA INGRESADO UNA ESTACION");
+
+        }
+
+    }
